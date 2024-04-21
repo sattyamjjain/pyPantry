@@ -7,8 +7,8 @@ with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="PyPantry",
-    version="1.1.0",
+    name="python-Pantry",
+    version="2.0.1",
     author="Sattyam Jain",
     author_email="sattyamjain96@gmail.com",
     description="Python Package for Data structure and algorithms implementation with its proper explanation",
