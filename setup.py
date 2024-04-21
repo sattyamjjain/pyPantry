@@ -7,14 +7,14 @@ with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="PyDSAlgo",
+    name="PyPantry",
     version="1.1.0",
     author="Sattyam Jain",
     author_email="sattyamjain96@gmail.com",
     description="Python Package for Data structure and algorithms implementation with its proper explanation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/sattyamjjain/pyDSAlgo",
+    url="https://github.com/sattyamjjain/pyPantry",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -24,7 +24,7 @@ setup(
     ],
     keywords=[
         "pydsa",
-        "pydsalgo"
+        "pyPantry"
         "dsa",
         "data structure",
         "algo",
@@ -35,7 +35,7 @@ setup(
     python_requires=">=3.9",
     install_requires=requirements,
     project_urls={
-        "Bug Reports": "https://github.com/sattyamjjain/pyDSAlgo",
-        "Source": "https://github.com/sattyamjjain/pyDSAlgo",
+        "Bug Reports": "https://github.com/sattyamjjain/pyPantry",
+        "Source": "https://github.com/sattyamjjain/pyPantry",
     },
 )

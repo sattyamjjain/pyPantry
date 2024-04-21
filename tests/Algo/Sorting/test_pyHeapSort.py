@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyHeapSort import PyHeapSort
+from pyPantry.Algo.Sorting.PyHeapSort import PyHeapSort
 
 
 class PyHeapSortTestCase(unittest.TestCase):

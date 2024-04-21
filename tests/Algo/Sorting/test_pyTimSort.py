@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyTimSort import PyTimSort
+from pyPantry.Algo.Sorting.PyTimSort import PyTimSort
 
 
 class PyTimSortTestCase(unittest.TestCase):

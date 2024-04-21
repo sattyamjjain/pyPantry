@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Searching.PyLinearSearch import PyLinearSearch
+from pyPantry.Algo.Searching.PyLinearSearch import PyLinearSearch
 
 
 class PyLinearSearchTestCase(unittest.TestCase):

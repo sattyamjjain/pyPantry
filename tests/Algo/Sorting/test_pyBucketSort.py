@@ -1,5 +1,5 @@
 import unittest
-from pyDSAlgo.Algo.Sorting.PyBucketSort import PyBucketSort
+from pyPantry.Algo.Sorting.PyBucketSort import PyBucketSort
 
 
 class PyBucketSortTestCase(unittest.TestCase):

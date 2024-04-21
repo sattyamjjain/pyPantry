@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Searching.PyInterpolationSearch import PyInterpolationSearch
+from pyPantry.Algo.Searching.PyInterpolationSearch import PyInterpolationSearch
 
 
 class TestPyInterpolationSearch(unittest.TestCase):

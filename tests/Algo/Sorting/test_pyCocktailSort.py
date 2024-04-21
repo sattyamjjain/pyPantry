@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyCocktailSort import PyCocktailSort
+from pyPantry.Algo.Sorting.PyCocktailSort import PyCocktailSort
 
 
 class PyCocktailSortTestCase(unittest.TestCase):

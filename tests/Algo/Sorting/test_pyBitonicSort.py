@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyBitonicSort import PyBitonicSort
+from pyPantry.Algo.Sorting.PyBitonicSort import PyBitonicSort
 
 
 class PyBitonicSortTestCase(unittest.TestCase):

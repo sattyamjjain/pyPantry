@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyTagSort import PyTagSort
+from pyPantry.Algo.Sorting.PyTagSort import PyTagSort
 
 
 class PyTagSortTestCase(unittest.TestCase):

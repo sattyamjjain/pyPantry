@@ -1,7 +1,7 @@
 
-# pyDSAlgo: Your One-Stop Solution for Data Structures and Algorithms in Python
+# pyPantry: Your One-Stop Solution for Data Structures and Algorithms in Python
 
-`pyDSAlgo` is a comprehensive Python library offering robust implementations of numerous data structures and algorithms. It serves as a reliable tool for educators, students, developers, and anyone keen on mastering or utilizing these foundational computer science concepts.
+`pyPantry` is a comprehensive Python library offering robust implementations of numerous data structures and algorithms. It serves as a reliable tool for educators, students, developers, and anyone keen on mastering or utilizing these foundational computer science concepts.
 
 ## 📋 Table of Contents
 
@@ -101,7 +101,7 @@
 ## 🔧 Installation
 
 ```bash
-pip install pyDSAlgo
+pip install pyPantry
 ```
 
 ## 🚀 Usage
@@ -109,7 +109,7 @@ pip install pyDSAlgo
 ### Data Structures:
 
 ```python
-from pyDSAlgo.DS.Stack.PyStack import PyStack
+from pyPantry.DS.Stack.PyStack import PyStack
 
 # Create a new stack
 stack = PyStack()
@@ -126,7 +126,7 @@ print(stack.pop())  # Output: 3
 ### Algorithms:
 
 ```python
-from pyDSAlgo.Algo.Sorting.PyBubbleSort import PyBubbleSort
+from pyPantry.Algo.Sorting.PyBubbleSort import PyBubbleSort
 
 # Sample list to be sorted
 sample_list = [64, 34, 25, 12, 22, 11, 90]
@@ -142,7 +142,7 @@ All implementations come with corresponding test files located in the `tests` di
 
 ## 🤝 Contributing
 
-We welcome and value contributions from the open-source community. Your input, whether it's a bug fix, feature addition, or documentation improvement, helps enhance `pyDSAlgo`.
+We welcome and value contributions from the open-source community. Your input, whether it's a bug fix, feature addition, or documentation improvement, helps enhance `pyPantry`.
 
 ## 👏 Credits
 
@@ -150,7 +150,7 @@ Crafted with ❤️ by [Sattyam Jain](https://www.linkedin.com/in/sattyamjain/).
 
 ## 📜 License
 
-Licensed under the [MIT License](https://github.com/sattyamjjain/pyDSAlgo/blob/main/LICENSE).
+Licensed under the [MIT License](https://github.com/sattyamjjain/pyPantry/blob/main/LICENSE).
 
 ## 📞 Contact
 

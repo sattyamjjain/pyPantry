@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Tree.PyAVLTree import PyAVLTree
+from pyPantry.DS.Tree.PyAVLTree import PyAVLTree
 
 
 class AVLTreeTestCase(unittest.TestCase):

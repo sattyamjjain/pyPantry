@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Tree.PyBinarySearchTree import PyBinarySearchTree
+from pyPantry.DS.Tree.PyBinarySearchTree import PyBinarySearchTree
 
 
 class BinarySearchTreeTests(unittest.TestCase):

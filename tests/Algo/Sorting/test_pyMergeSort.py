@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyMergeSort import PyMergeSort
+from pyPantry.Algo.Sorting.PyMergeSort import PyMergeSort
 
 
 class PyMergeSortTestCase(unittest.TestCase):

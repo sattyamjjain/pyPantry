@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Searching.PyMetaBinarySearch import PyMetaBinarySearch
+from pyPantry.Algo.Searching.PyMetaBinarySearch import PyMetaBinarySearch
 
 
 class PyMetaBinarySearchTestCase(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyCombSort import PyCombSort
+from pyPantry.Algo.Sorting.PyCombSort import PyCombSort
 
 
 class PyCombSortTestCase(unittest.TestCase):

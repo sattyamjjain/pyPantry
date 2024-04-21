@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Searching.PyBinarySearch import PyBinarySearch
+from pyPantry.Algo.Searching.PyBinarySearch import PyBinarySearch
 
 
 class PyBinarySearchTestCase(unittest.TestCase):

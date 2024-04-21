@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyShellSort import PyShellSort
+from pyPantry.Algo.Sorting.PyShellSort import PyShellSort
 
 
 class PyShellSortTestCase(unittest.TestCase):

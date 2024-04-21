@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyOddEvenSort import PyOddEvenSort
+from pyPantry.Algo.Sorting.PyOddEvenSort import PyOddEvenSort
 
 
 class PyOddEvenSortTestCase(unittest.TestCase):

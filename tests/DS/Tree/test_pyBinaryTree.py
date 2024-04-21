@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Tree.PyBinaryTree import PyBinaryTree
+from pyPantry.DS.Tree.PyBinaryTree import PyBinaryTree
 
 
 class BinaryTreeTestCase(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.LinkedList.PySkipLinkedList import PySkipLinkedList
+from pyPantry.DS.LinkedList.PySkipLinkedList import PySkipLinkedList
 
 
 class SkipLinkedListTestCase(unittest.TestCase):

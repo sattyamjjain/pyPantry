@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyBIngoSort import PyBingoSort
+from pyPantry.Algo.Sorting.PyBIngoSort import PyBingoSort
 
 
 class PyBingoSortTestCase(unittest.TestCase):

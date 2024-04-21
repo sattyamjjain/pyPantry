@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyCountingSort import PyCountingSort
+from pyPantry.Algo.Sorting.PyCountingSort import PyCountingSort
 
 
 class PyCountingSortTestCase(unittest.TestCase):

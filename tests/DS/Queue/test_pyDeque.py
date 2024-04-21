@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Queue.PyDeque import PyDeque
+from pyPantry.DS.Queue.PyDeque import PyDeque
 
 
 class DequeTestCase(unittest.TestCase):

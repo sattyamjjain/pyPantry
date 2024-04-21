@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyQuickSort import PyQuickSort
+from pyPantry.Algo.Sorting.PyQuickSort import PyQuickSort
 
 
 class PyQuickSortTestCase(unittest.TestCase):

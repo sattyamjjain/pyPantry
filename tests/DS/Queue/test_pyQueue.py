@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Queue.PyQueue import PyQueue
+from pyPantry.DS.Queue.PyQueue import PyQueue
 
 
 class PyQueueTestCase(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Stack.PyStack import PyStack
+from pyPantry.DS.Stack.PyStack import PyStack
 
 
 class PyStackTestCase(unittest.TestCase):

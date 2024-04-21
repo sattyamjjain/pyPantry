@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Tree.PyBTree import PyBTree
+from pyPantry.DS.Tree.PyBTree import PyBTree
 
 
 class TestBTree(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.LinkedList.PyHeaderLinkedList import PyHeaderLinkedList
+from pyPantry.DS.LinkedList.PyHeaderLinkedList import PyHeaderLinkedList
 
 
 class PyHeaderLinkedListTestCase(unittest.TestCase):
@@ -42,7 +42,7 @@ class PyHeaderLinkedListTestCase(unittest.TestCase):
             self.hll.display()
         self.assertEqual(
             logs.output,
-            ["INFO:pyDSAlgo.DS.LinkedList.PyHeaderLinkedList:1 -> 2 -> 3 -> None"],
+            ["INFO:pyPantry.DS.LinkedList.PyHeaderLinkedList:1 -> 2 -> 3 -> None"],
         )
 
     def test_empty_list(self):

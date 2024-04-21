@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Searching.PyTernarySearch import PyTernarySearch
+from pyPantry.Algo.Searching.PyTernarySearch import PyTernarySearch
 
 
 class PyTernarySearchTestCase(unittest.TestCase):

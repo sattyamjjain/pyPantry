@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Heap.PyMaxHeap import PyMaxHeap
+from pyPantry.DS.Heap.PyMaxHeap import PyMaxHeap
 
 
 class MaxHeapTestCase(unittest.TestCase):

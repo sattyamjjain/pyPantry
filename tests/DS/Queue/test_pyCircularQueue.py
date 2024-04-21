@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Queue.PyCircularQueue import CircularQueue
+from pyPantry.DS.Queue.PyCircularQueue import CircularQueue
 
 
 class CircularQueueTestCase(unittest.TestCase):

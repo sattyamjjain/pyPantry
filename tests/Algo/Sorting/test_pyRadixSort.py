@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyRadixSort import PyRadixSort
+from pyPantry.Algo.Sorting.PyRadixSort import PyRadixSort
 
 
 class PyRadixSortTestCase(unittest.TestCase):

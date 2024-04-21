@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.LinkedList.PyDoublyLinkedList import PyDoublyLinkedList
+from pyPantry.DS.LinkedList.PyDoublyLinkedList import PyDoublyLinkedList
 
 
 class PyDoublyLinkedListTestCase(unittest.TestCase):
@@ -34,7 +34,7 @@ class PyDoublyLinkedListTestCase(unittest.TestCase):
         with self.assertLogs() as logs:
             self.empty_dll.display()
         self.assertEqual(
-            logs.output, ["INFO:pyDSAlgo.DS.LinkedList.PyDoublyLinkedList:None"]
+            logs.output, ["INFO:pyPantry.DS.LinkedList.PyDoublyLinkedList:None"]
         )
 
         with self.assertLogs() as logs:
@@ -42,10 +42,10 @@ class PyDoublyLinkedListTestCase(unittest.TestCase):
         self.assertEqual(
             logs.output,
             [
-                "INFO:pyDSAlgo.DS.LinkedList.PyDoublyLinkedList:1",
-                "INFO:pyDSAlgo.DS.LinkedList.PyDoublyLinkedList:2",
-                "INFO:pyDSAlgo.DS.LinkedList.PyDoublyLinkedList:3",
-                "INFO:pyDSAlgo.DS.LinkedList.PyDoublyLinkedList:None",
+                "INFO:pyPantry.DS.LinkedList.PyDoublyLinkedList:1",
+                "INFO:pyPantry.DS.LinkedList.PyDoublyLinkedList:2",
+                "INFO:pyPantry.DS.LinkedList.PyDoublyLinkedList:3",
+                "INFO:pyPantry.DS.LinkedList.PyDoublyLinkedList:None",
             ],
         )
 

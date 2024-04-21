@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Graph.PyGraph import PyGraph
+from pyPantry.DS.Graph.PyGraph import PyGraph
 
 
 class PyGraphTestCase(unittest.TestCase):

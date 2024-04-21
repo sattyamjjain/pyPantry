@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyStoogeSort import PyStoogeSort
+from pyPantry.Algo.Sorting.PyStoogeSort import PyStoogeSort
 
 
 class PyStoogeSortTestCase(unittest.TestCase):

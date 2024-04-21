@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Stack.pyLinkedStack import PyLinkedStack
+from pyPantry.DS.Stack.pyLinkedStack import PyLinkedStack
 
 
 class LinkedStackTestCase(unittest.TestCase):

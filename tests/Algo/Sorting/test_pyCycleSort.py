@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyCycleSort import PyCycleSort
+from pyPantry.Algo.Sorting.PyCycleSort import PyCycleSort
 
 
 class PyCycleSortTestCase(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyInsertionSort import PyInsertionSort
+from pyPantry.Algo.Sorting.PyInsertionSort import PyInsertionSort
 
 
 class PyInsertionSortTestCase(unittest.TestCase):

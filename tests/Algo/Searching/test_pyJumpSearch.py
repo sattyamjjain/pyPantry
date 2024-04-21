@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Searching.PyJumpSearch import PyJumpSearch
+from pyPantry.Algo.Searching.PyJumpSearch import PyJumpSearch
 
 
 class PyJumpSearchTestCase(unittest.TestCase):

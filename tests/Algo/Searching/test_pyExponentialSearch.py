@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Searching.PyExponentialSearch import PyExponentialSearch
+from pyPantry.Algo.Searching.PyExponentialSearch import PyExponentialSearch
 
 
 class PyExponentialSearchTestCase(unittest.TestCase):

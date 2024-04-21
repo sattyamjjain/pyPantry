@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyPigeonholeSort import PyPigeonholeSort
+from pyPantry.Algo.Sorting.PyPigeonholeSort import PyPigeonholeSort
 
 
 class PyPigeonholeSortTestCase(unittest.TestCase):

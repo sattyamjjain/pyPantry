@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Graph.PyLinkedGraph import PyLinkedGraph
+from pyPantry.DS.Graph.PyLinkedGraph import PyLinkedGraph
 
 
 class TestPyLinkedGraph(unittest.TestCase):

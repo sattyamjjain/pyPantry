@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyTreeSort import PyTreeSort
+from pyPantry.Algo.Sorting.PyTreeSort import PyTreeSort
 
 
 class PyTreeSortTestCase(unittest.TestCase):

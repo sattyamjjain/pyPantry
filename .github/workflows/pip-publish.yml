@@ -1,4 +1,4 @@
-name: Publish PyDSAlgo to PyPI
+name: Publish PyPantry to PyPI
 
 on:
   release:

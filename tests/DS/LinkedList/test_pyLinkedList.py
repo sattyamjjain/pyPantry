@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.LinkedList.PyLinkedList import PyLinkedList
+from pyPantry.DS.LinkedList.PyLinkedList import PyLinkedList
 
 
 class PyLinkedListTestCase(unittest.TestCase):

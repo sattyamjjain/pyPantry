@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Heap.PyMinHeap import PyMinHeap
+from pyPantry.DS.Heap.PyMinHeap import PyMinHeap
 
 
 class MinHeapTestCase(unittest.TestCase):

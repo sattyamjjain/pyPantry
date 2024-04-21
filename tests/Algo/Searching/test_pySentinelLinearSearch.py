@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Searching.PySentinelLinearSearch import PySentinelLinearSearch
+from pyPantry.Algo.Searching.PySentinelLinearSearch import PySentinelLinearSearch
 
 
 class PySentinelLinearSearchTestCase(unittest.TestCase):

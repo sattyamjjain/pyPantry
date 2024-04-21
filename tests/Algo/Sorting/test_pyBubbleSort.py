@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyBubbleSort import PyBubbleSort
+from pyPantry.Algo.Sorting.PyBubbleSort import PyBubbleSort
 
 
 class PyBubbleSortTestCase(unittest.TestCase):

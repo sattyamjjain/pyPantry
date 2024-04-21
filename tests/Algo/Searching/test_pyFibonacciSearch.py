@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Searching.PyFibonacciSearch import PyFibonacciSearch
+from pyPantry.Algo.Searching.PyFibonacciSearch import PyFibonacciSearch
 
 
 class PyFibonacciSearchTestCase(unittest.TestCase):

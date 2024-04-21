@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyGnomeSort import PyGnomeSort
+from pyPantry.Algo.Sorting.PyGnomeSort import PyGnomeSort
 
 
 class PyGnomeSortTestCase(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.Py3WayMergeSort import Py3WayMergeSort
+from pyPantry.Algo.Sorting.Py3WayMergeSort import Py3WayMergeSort
 
 
 class Py3WayMergeSortTestCase(unittest.TestCase):

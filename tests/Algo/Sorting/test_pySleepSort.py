@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PySleepSort import PySleepSort
+from pyPantry.Algo.Sorting.PySleepSort import PySleepSort
 
 
 class PySleepSortTestCase(unittest.TestCase):

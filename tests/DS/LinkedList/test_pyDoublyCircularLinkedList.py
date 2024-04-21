@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.LinkedList.PyDoublyCircularLinkedLIst import PyDoublyCircularLinkedList
+from pyPantry.DS.LinkedList.PyDoublyCircularLinkedLIst import PyDoublyCircularLinkedList
 
 
 class PyDoublyCircularLinkedListTestCase(unittest.TestCase):

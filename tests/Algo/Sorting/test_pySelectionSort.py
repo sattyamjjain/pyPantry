@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PySelectionSort import PySelectionSort
+from pyPantry.Algo.Sorting.PySelectionSort import PySelectionSort
 
 
 class PySelectionSortTestCase(unittest.TestCase):

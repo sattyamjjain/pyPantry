@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyStrandSort import PyStrandSort
+from pyPantry.Algo.Sorting.PyStrandSort import PyStrandSort
 
 
 class PyStrandSortTestCase(unittest.TestCase):

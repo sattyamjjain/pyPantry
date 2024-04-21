@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Trie.PyTrie import PyTrie
+from pyPantry.DS.Trie.PyTrie import PyTrie
 
 
 class PyTrieTestCase(unittest.TestCase):

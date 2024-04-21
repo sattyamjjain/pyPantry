@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Queue.PyPriorityQueue import PyPriorityQueue
+from pyPantry.DS.Queue.PyPriorityQueue import PyPriorityQueue
 
 
 class PriorityQueueTestCase(unittest.TestCase):

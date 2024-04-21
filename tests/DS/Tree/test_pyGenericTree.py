@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.DS.Tree.PyGenericTree import PyGenericTree
+from pyPantry.DS.Tree.PyGenericTree import PyGenericTree
 
 
 class GenericTreeTestCase(unittest.TestCase):

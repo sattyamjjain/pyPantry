@@ -1,6 +1,6 @@
 import unittest
 
-from pyDSAlgo.Algo.Sorting.PyPancakeSort import PyPancakeSort
+from pyPantry.Algo.Sorting.PyPancakeSort import PyPancakeSort
 
 
 class PyPancakeSortTestCase(unittest.TestCase):
