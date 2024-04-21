@@ -140,6 +140,10 @@ print(sorted_list)  # Output: [11, 12, 22, 25, 34, 64, 90]
 
 All implementations come with corresponding test files located in the `tests` directory, ensuring reliability and correctness.
 
+## 🧪 Repo Activity
+
+![Alt](https://repobeats.axiom.co/api/embed/3ee7297c5f6d0e8b7211826e60240d216aa92b46.svg "Repobeats analytics image")
+
 ## 🤝 Contributing
 
 We welcome and value contributions from the open-source community. Your input, whether it's a bug fix, feature addition, or documentation improvement, helps enhance `pyPantry`.
