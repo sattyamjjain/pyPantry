@@ -7,7 +7,9 @@ class PyBitonicSort(PyAlgo):
         self.arr = arr
 
     def compare_and_swap(self, i, j, direction):
-        if (direction == 1 and self.arr[i] > self.arr[j]) or (direction == 0 and self.arr[i] < self.arr[j]):
+        if (direction == 1 and self.arr[i] > self.arr[j]) or (
+            direction == 0 and self.arr[i] < self.arr[j]
+        ):
             self.arr[i], self.arr[j] = self.arr[j], self.arr[i]
 
     def bitonic_merge(self, low, cnt, direction):

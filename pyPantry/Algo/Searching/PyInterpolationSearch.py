@@ -11,7 +11,10 @@ class PyInterpolationSearch(PyAlgo):
         high = len(self.arr) - 1
 
         while low <= high and self.arr[low] <= target <= self.arr[high]:
-            position = low + int(((target - self.arr[low]) * (high - low)) / (self.arr[high] - self.arr[low]))
+            position = low + int(
+                ((target - self.arr[low]) * (high - low))
+                / (self.arr[high] - self.arr[low])
+            )
             if self.arr[position] == target:
                 return position
             if self.arr[position] < target:

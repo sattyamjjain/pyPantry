@@ -8,7 +8,9 @@ class PyBucketSortTestCase(unittest.TestCase):
         arr = [0.79, 0.13, 0.16, 0.64, 0.39, 0.20, 0.89, 0.53, 0.71, 0.42]
         num_buckets = 5
         sorter = PyBucketSort(arr, num_buckets)
-        self.assertEqual(sorter.sort(), [0.13, 0.16, 0.20, 0.39, 0.42, 0.53, 0.64, 0.71, 0.79, 0.89])
+        self.assertEqual(
+            sorter.sort(), [0.13, 0.16, 0.20, 0.39, 0.42, 0.53, 0.64, 0.71, 0.79, 0.89]
+        )
 
     def test_sort_empty_array(self):
         arr = []

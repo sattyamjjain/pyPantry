@@ -1,4 +1,7 @@
 from pyPantry.DS import PyDS
+from pyPantry.utils import get_logger
+
+_logger = get_logger(__name__)
 
 
 class Node:
@@ -68,8 +71,8 @@ class PyDoublyCircularLinkedList(PyDS):
 
         current = self.head
         while True:
-            print(current.data, end=" <-> ")
+            _logger.info(current.data, end=" <-> ")
             current = current.next
             if current == self.head:
                 break
-        print("Head")
+        _logger.info("Head")

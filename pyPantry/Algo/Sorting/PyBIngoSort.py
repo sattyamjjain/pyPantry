@@ -15,7 +15,10 @@ class PyBingoSort(PyAlgo):
                     max_index = i
 
             if max_index != n - 1:
-                self.arr[max_index], self.arr[n - 1] = self.arr[n - 1], self.arr[max_index]
+                self.arr[max_index], self.arr[n - 1] = (
+                    self.arr[n - 1],
+                    self.arr[max_index],
+                )
 
             max_val = self.arr[n - 1]
             i = 0

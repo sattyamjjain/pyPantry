@@ -24,7 +24,7 @@ setup(
     ],
     keywords=[
         "pydsa",
-        "pyPantry"
+        "pyPantry",
         "dsa",
         "data structure",
         "algo",

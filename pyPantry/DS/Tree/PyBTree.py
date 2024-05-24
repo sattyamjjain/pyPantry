@@ -1,3 +1,8 @@
+from pyPantry.utils import get_logger
+
+_logger = get_logger(__name__)
+
+
 class Node:
     def __init__(self, leaf=False):
         self.leaf = leaf
@@ -52,7 +57,6 @@ class PyBTree:
         print("Level ", l, " ", len(x.keys), end=":")
         for i in x.keys:
             print(i, end=" ")
-        print()
         l += 1
         if len(x.child) > 0:
             for i in x.child:

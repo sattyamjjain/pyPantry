@@ -68,5 +68,4 @@ class PyBinarySearchTree(PyDS):
     def _inorder_recursive(self, root):
         if root is not None:
             self._inorder_recursive(root.left)
-            print(root.key, end=" ")
             self._inorder_recursive(root.right)
