@@ -8,7 +8,7 @@ with open("README.md", encoding="utf-8") as f:
 
 setup(
     name="python-Pantry",
-    version="3.0.1",
+    version="3.0.2",
     author="Sattyam Jain",
     author_email="sattyamjain96@gmail.com",
     description="Python Package for Data structure and algorithms implementation with its proper explanation",

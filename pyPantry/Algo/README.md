@@ -9,7 +9,6 @@ This section of the `pyPantry` library provides robust implementations of variou
 - [Algorithms](#algorithms)
   - [Searching](#searching)
   - [Sorting](#sorting)
-- [Usage](#usage)
 - [Testing](#testing)
 
 ## 🌟 Features
@@ -79,33 +78,6 @@ Sorting algorithms are designed to arrange elements in a particular order (typic
   - A hybrid sorting algorithm derived from merge sort and insertion sort.
 - **Pancake Sort**: `PyPancakeSort.py`
   - A sorting algorithm that sorts a list by flipping sublists like pancakes.
-
-## 🚀 Usage
-
-### Binary Search Example
-
-```python
-from pyPantry.Algo.Searching.PyBinarySearch import PyBinarySearch
-
-# Sample sorted list
-arr = [1, 2, 3, 4, 7, 9]
-searcher = PyBinarySearch(arr)
-index = searcher.search(7)
-print(index)  # Output: 4
-```
-
-### Bubble Sort Example
-
-```python
-from pyPantry.Algo.Sorting.PyBubbleSort import PyBubbleSort
-
-# Sample unsorted list
-arr = [64, 25, 12, 22, 11]
-sorter = PyBubbleSort(arr)
-sorted_list = sorter.sort()
-
-print(sorted_list)  # Output: [11, 12, 22, 25, 64]
-```
 
 ## 🧪 Testing
 
