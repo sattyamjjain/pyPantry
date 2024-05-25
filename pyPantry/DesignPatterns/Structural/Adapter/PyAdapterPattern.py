@@ -18,7 +18,7 @@ class PyAdapterPattern(PyDesignPatterns):
 
     # Adapter
     class RectangleAdapter(Shape):
-        def __init__(self, adaptee: 'PyAdapterPattern.LegacyRectangle'):
+        def __init__(self, adaptee: "PyAdapterPattern.LegacyRectangle"):
             self.adaptee = adaptee
 
         def draw(self) -> str:

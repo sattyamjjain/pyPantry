@@ -30,7 +30,7 @@ class PyBTree:
         i = len(x.keys) - 1
         if x.leaf:
             x.keys.append((k, None))
-            x.keys.sort(key=lambda x: x[0])
+            x.keys.sort(key=lambda _x: _x[0])
         else:
             while i >= 0 and k < x.keys[i][0]:
                 i -= 1
@@ -47,11 +47,11 @@ class PyBTree:
         z = Node(y.leaf)
         i.child.insert(x + 1, z)
         i.keys.insert(x, y.keys[t - 1])
-        z.keys = y.keys[t : (2 * t - 1)]
-        y.keys = y.keys[0 : (t - 1)]
+        z.keys = y.keys[t: (2 * t - 1)]
+        y.keys = y.keys[0: (t - 1)]
         if not y.leaf:
-            z.child = y.child[t : (2 * t)]
-            y.child = y.child[0 : (t - 1)]
+            z.child = y.child[t: (2 * t)]
+            y.child = y.child[0: (t - 1)]
 
     def print_tree(self, x, l=0):
         print("Level ", l, " ", len(x.keys), end=":")
@@ -159,7 +159,8 @@ class PyBTree:
         if x == self.root and len(x.keys) == 0:
             self.root = new
 
-    def delete_sibling(self, x, i, j):
+    @staticmethod
+    def delete_sibling(x, i, j):
         c_node = x.child[i]
         if i < j:
             rs_node = x.child[j]

@@ -36,26 +36,26 @@ class PyAbstractFactoryPattern(PyDesignPatterns):
     # Abstract Factory
     class UIFactory(ABC):
         @abstractmethod
-        def create_button(self) -> 'PyAbstractFactoryPattern.Button':
+        def create_button(self) -> "PyAbstractFactoryPattern.Button":
             pass
 
         @abstractmethod
-        def create_checkbox(self) -> 'PyAbstractFactoryPattern.Checkbox':
+        def create_checkbox(self) -> "PyAbstractFactoryPattern.Checkbox":
             pass
 
     # Concrete Factories
     class WindowsUIFactory(UIFactory):
-        def create_button(self) -> 'PyAbstractFactoryPattern.Button':
+        def create_button(self) -> "PyAbstractFactoryPattern.Button":
             return PyAbstractFactoryPattern.WindowsButton()
 
-        def create_checkbox(self) -> 'PyAbstractFactoryPattern.Checkbox':
+        def create_checkbox(self) -> "PyAbstractFactoryPattern.Checkbox":
             return PyAbstractFactoryPattern.WindowsCheckbox()
 
     class MacOSUIFactory(UIFactory):
-        def create_button(self) -> 'PyAbstractFactoryPattern.Button':
+        def create_button(self) -> "PyAbstractFactoryPattern.Button":
             return PyAbstractFactoryPattern.MacOSButton()
 
-        def create_checkbox(self) -> 'PyAbstractFactoryPattern.Checkbox':
+        def create_checkbox(self) -> "PyAbstractFactoryPattern.Checkbox":
             return PyAbstractFactoryPattern.MacOSCheckbox()
 
     def example(self):

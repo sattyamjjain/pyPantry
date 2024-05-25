@@ -1,8 +1,10 @@
 import unittest
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import patch
 
-from pyPantry.DesignPatterns.Creational.AbstractFactory.PyAbstractFactoryPattern import PyAbstractFactoryPattern
+from pyPantry.DesignPatterns.Creational.AbstractFactory.PyAbstractFactoryPattern import (
+    PyAbstractFactoryPattern,
+)
 
 
 class PyAbstractFactoryPatternTestCase(unittest.TestCase):
@@ -26,10 +28,10 @@ class PyAbstractFactoryPatternTestCase(unittest.TestCase):
         self.assertEqual(checkbox.toggle(), "MacOS Checkbox toggled")
 
     def test_example(self):
-        with patch('sys.stdout', new=StringIO()) as fake_out:
+        with patch("sys.stdout", new=StringIO()) as fake_out:
             pattern = PyAbstractFactoryPattern()
             pattern.example()
-            output = fake_out.getvalue().strip().split('\n')
+            output = fake_out.getvalue().strip().split("\n")
             self.assertEqual(output[0], "Windows Button clicked")
             self.assertEqual(output[1], "Windows Checkbox toggled")
             self.assertEqual(output[2], "MacOS Button clicked")

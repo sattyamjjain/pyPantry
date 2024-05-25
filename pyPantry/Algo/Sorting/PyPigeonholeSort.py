@@ -10,7 +10,6 @@ class PyPigeonholeSort(PyAlgo):
         if len(self.arr) == 0:
             return []
 
-        n = len(self.arr)
         min_val = min(self.arr)
         max_val = max(self.arr)
 

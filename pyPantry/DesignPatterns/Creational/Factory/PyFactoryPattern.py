@@ -26,24 +26,26 @@ class PyFactoryPattern(PyDesignPatterns):
     # Creator Interface
     class NotificationFactory(ABC):
         @abstractmethod
-        def create_notification(self) -> 'PyFactoryPattern.Notification':
+        def create_notification(self) -> "PyFactoryPattern.Notification":
             pass
 
     # Concrete Creators
     class EmailNotificationFactory(NotificationFactory):
-        def create_notification(self) -> 'PyFactoryPattern.Notification':
+        def create_notification(self) -> "PyFactoryPattern.Notification":
             return PyFactoryPattern.EmailNotification()
 
     class SMSNotificationFactory(NotificationFactory):
-        def create_notification(self) -> 'PyFactoryPattern.Notification':
+        def create_notification(self) -> "PyFactoryPattern.Notification":
             return PyFactoryPattern.SMSNotification()
 
     class PushNotificationFactory(NotificationFactory):
-        def create_notification(self) -> 'PyFactoryPattern.Notification':
+        def create_notification(self) -> "PyFactoryPattern.Notification":
             return PyFactoryPattern.PushNotification()
 
     def example(self):
-        def send_notification(factory: PyFactoryPattern.NotificationFactory, message: str) -> None:
+        def send_notification(
+            factory: PyFactoryPattern.NotificationFactory, message: str
+        ) -> None:
             notification = factory.create_notification()
             notification.notify(message)
 

@@ -1,6 +1,6 @@
 import unittest
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import patch
 
 from pyPantry.DesignPatterns.Structural.Adapter.PyAdapterPattern import PyAdapterPattern
 
@@ -14,10 +14,10 @@ class PyAdapterPatternTestCase(unittest.TestCase):
         self.assertEqual(result, "Drawing a rectangle using LegacyRectangle")
 
     def test_example(self):
-        with patch('sys.stdout', new=StringIO()) as fake_out:
+        with patch("sys.stdout", new=StringIO()) as fake_out:
             pattern = PyAdapterPattern()
             pattern.example()
-            output = fake_out.getvalue().strip().split('\n')
+            output = fake_out.getvalue().strip().split("\n")
             self.assertIn("Drawing a rectangle using LegacyRectangle", output)
 
 

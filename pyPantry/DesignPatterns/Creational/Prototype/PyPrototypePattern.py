@@ -26,7 +26,9 @@ class PyPrototypePattern(PyDesignPatterns):
 
     def example(self):
         # Original character
-        original_character = PyPrototypePattern.Character(name="Knight", health=100, mana=50)
+        original_character = PyPrototypePattern.Character(
+            name="Knight", health=100, mana=50
+        )
         print(f"Original: {original_character}")
 
         # Cloning the character

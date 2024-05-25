@@ -21,7 +21,7 @@ class PyReactorPattern(PyDesignPatterns):
             conn, addr = self.sock.accept()  # Should be ready to read
             print(f"Accepted connection from {addr}")
             conn.setblocking(False)
-            data = types.SimpleNamespace(addr=addr, inb=b'', outb=b'')
+            data = types.SimpleNamespace(addr=addr, inb=b"", outb=b"")
             events = selectors.EVENT_READ | selectors.EVENT_WRITE
             self.selector.register(conn, events, data=data)
 
@@ -66,7 +66,7 @@ class PyReactorPattern(PyDesignPatterns):
                     handler.handle_event(key, mask)
 
     def example(self):
-        host, port = 'localhost', 65432
+        host, port = "localhost", 65432
 
         # Create a TCP/IP socket
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

@@ -1,8 +1,9 @@
 import unittest
 from unittest.mock import patch, call
 
-from pyPantry.DesignPatterns.Architectural.ModelViewViewModel.PyModelViewViewModelPattern import \
-    PyModelViewViewModelPattern
+from pyPantry.DesignPatterns.Architectural.ModelViewViewModel.PyModelViewViewModelPattern import (
+    PyModelViewViewModelPattern,
+)
 
 
 class PyModelViewViewModelPatternTestCase(unittest.TestCase):
@@ -20,13 +21,15 @@ class PyModelViewViewModelPatternTestCase(unittest.TestCase):
         view = PyModelViewViewModelPattern.TaskView()
         tasks = ["Task 1", "Task 2"]
 
-        with patch('builtins.print') as mocked_print:
+        with patch("builtins.print") as mocked_print:
             view.display_tasks(tasks)
-            mocked_print.assert_has_calls([
-                call("Task List:"),
-                call("- Task 1"),
-                call("- Task 2"),
-            ])
+            mocked_print.assert_has_calls(
+                [
+                    call("Task List:"),
+                    call("- Task 1"),
+                    call("- Task 2"),
+                ]
+            )
 
     def test_task_viewmodel(self):
         model = PyModelViewViewModelPattern.TaskModel()
@@ -42,7 +45,7 @@ class PyModelViewViewModelPatternTestCase(unittest.TestCase):
         self.assertNotIn("Task 1", viewmodel.get_tasks())
 
     def test_example(self):
-        with patch('builtins.print') as mocked_print:
+        with patch("builtins.print") as mocked_print:
             pattern = PyModelViewViewModelPattern()
             pattern.example()
             output = mocked_print.mock_calls

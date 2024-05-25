@@ -1,6 +1,6 @@
 import unittest
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import patch
 
 from pyPantry.DesignPatterns.Behavioral.Memento.PyMementoPattern import PyMementoPattern
 
@@ -18,7 +18,9 @@ class PyMementoPatternTestCase(unittest.TestCase):
         history.save(editor.save())
 
         editor.type(" This is an example of Memento pattern.")
-        self.assertEqual(editor.get_text(), "Hello, World! This is an example of Memento pattern.")
+        self.assertEqual(
+            editor.get_text(), "Hello, World! This is an example of Memento pattern."
+        )
 
         editor.restore(history.restore())
         self.assertEqual(editor.get_text(), "Hello, World!")
@@ -27,11 +29,14 @@ class PyMementoPatternTestCase(unittest.TestCase):
         self.assertEqual(editor.get_text(), "Hello")
 
     def test_example(self):
-        with patch('sys.stdout', new=StringIO()) as fake_out:
+        with patch("sys.stdout", new=StringIO()) as fake_out:
             pattern = PyMementoPattern()
             pattern.example()
-            output = fake_out.getvalue().strip().split('\n')
-            self.assertIn("Current text: Hello, World! This is an example of Memento pattern.", output)
+            output = fake_out.getvalue().strip().split("\n")
+            self.assertIn(
+                "Current text: Hello, World! This is an example of Memento pattern.",
+                output,
+            )
             self.assertIn("Restored text: Hello, World!", output)
             self.assertIn("Restored text: Hello", output)
 

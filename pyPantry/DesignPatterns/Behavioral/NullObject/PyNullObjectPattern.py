@@ -22,7 +22,7 @@ class PyNullObjectPattern(PyDesignPatterns):
 
     # Client Code
     class Application:
-        def __init__(self, logger: 'PyNullObjectPattern.Logger'):
+        def __init__(self, logger: "PyNullObjectPattern.Logger"):
             self._logger = logger
 
         def do_something(self) -> None:

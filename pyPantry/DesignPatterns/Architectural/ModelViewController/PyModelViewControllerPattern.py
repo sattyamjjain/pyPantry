@@ -28,7 +28,8 @@ class PyModelViewControllerPattern(PyDesignPatterns):
 
     # View
     class TaskView:
-        def display_tasks(self, tasks):
+        @staticmethod
+        def display_tasks(tasks):
             print("Task List:")
             for task in tasks:
                 print(f"- {task}")

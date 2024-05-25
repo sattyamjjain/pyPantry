@@ -28,7 +28,7 @@ class PyActiveObjectPattern(PyDesignPatterns):
             self._queue = Queue()
             self._stop_event = threading.Event()
 
-        def enqueue(self, command: 'PyActiveObjectPattern.Command') -> None:
+        def enqueue(self, command: "PyActiveObjectPattern.Command") -> None:
             self._queue.put(command)
 
         def run(self) -> None:

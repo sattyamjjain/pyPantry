@@ -1,8 +1,10 @@
 import unittest
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import patch
 
-from pyPantry.DesignPatterns.Behavioral.Interpreter.PyInterpreterPattern import PyInterpreterPattern
+from pyPantry.DesignPatterns.Behavioral.Interpreter.PyInterpreterPattern import (
+    PyInterpreterPattern,
+)
 
 
 class PyInterpreterPatternTestCase(unittest.TestCase):
@@ -29,22 +31,20 @@ class PyInterpreterPatternTestCase(unittest.TestCase):
     def test_complex_expression(self):
         expression = PyInterpreterPattern.Minus(
             PyInterpreterPattern.Plus(
-                PyInterpreterPattern.Number(5),
-                PyInterpreterPattern.Number(10)
+                PyInterpreterPattern.Number(5), PyInterpreterPattern.Number(10)
             ),
             PyInterpreterPattern.Plus(
-                PyInterpreterPattern.Number(2),
-                PyInterpreterPattern.Number(3)
-            )
+                PyInterpreterPattern.Number(2), PyInterpreterPattern.Number(3)
+            ),
         )
         context = {}
         self.assertEqual(expression.interpret(context), 10)
 
     def test_example(self):
-        with patch('sys.stdout', new=StringIO()) as fake_out:
+        with patch("sys.stdout", new=StringIO()) as fake_out:
             pattern = PyInterpreterPattern()
             pattern.example()
-            output = fake_out.getvalue().strip().split('\n')
+            output = fake_out.getvalue().strip().split("\n")
             self.assertIn("The result of the expression is: 10", output)
 
 

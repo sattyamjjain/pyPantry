@@ -1,6 +1,6 @@
 import unittest
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import patch
 
 from pyPantry.DesignPatterns.Structural.Bridge.PyBridgePattern import PyBridgePattern
 
@@ -22,10 +22,10 @@ class PyBridgePatternTestCase(unittest.TestCase):
         self.assertEqual(remote.turn_off(), "Radio is now OFF")
 
     def test_example(self):
-        with patch('sys.stdout', new=StringIO()) as fake_out:
+        with patch("sys.stdout", new=StringIO()) as fake_out:
             pattern = PyBridgePattern()
             pattern.example()
-            output = fake_out.getvalue().strip().split('\n')
+            output = fake_out.getvalue().strip().split("\n")
             self.assertIn("TV is now ON", output)
             self.assertIn("TV volume set to 10", output)
             self.assertIn("TV is now OFF", output)

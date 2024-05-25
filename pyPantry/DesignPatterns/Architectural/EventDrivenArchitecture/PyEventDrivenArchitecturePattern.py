@@ -24,7 +24,7 @@ class PyEventDrivenArchitecturePattern(PyDesignPatterns):
 
         def create_user(self, user_data):
             print(f"User created: {user_data}")
-            self.dispatcher.dispatch_event('user_created', user_data)
+            self.dispatcher.dispatch_event("user_created", user_data)
 
     class ProductService:
         def __init__(self, dispatcher):
@@ -32,7 +32,7 @@ class PyEventDrivenArchitecturePattern(PyDesignPatterns):
 
         def create_product(self, product_data):
             print(f"Product created: {product_data}")
-            self.dispatcher.dispatch_event('product_created', product_data)
+            self.dispatcher.dispatch_event("product_created", product_data)
 
     class OrderService:
         def __init__(self, dispatcher):
@@ -40,7 +40,7 @@ class PyEventDrivenArchitecturePattern(PyDesignPatterns):
 
         def create_order(self, order_data):
             print(f"Order created: {order_data}")
-            self.dispatcher.dispatch_event('order_created', order_data)
+            self.dispatcher.dispatch_event("order_created", order_data)
 
     # Listeners
     class EmailNotificationService:
@@ -60,8 +60,8 @@ class PyEventDrivenArchitecturePattern(PyDesignPatterns):
         order_service = PyEventDrivenArchitecturePattern.OrderService(dispatcher)
 
         email_service = PyEventDrivenArchitecturePattern.EmailNotificationService()
-        dispatcher.register_listener('user_created', email_service.on_user_created)
-        dispatcher.register_listener('order_created', email_service.on_order_created)
+        dispatcher.register_listener("user_created", email_service.on_user_created)
+        dispatcher.register_listener("order_created", email_service.on_order_created)
 
         # Simulate creating a user, product, and order
         user_service.create_user({"id": 1, "name": "Alice"})

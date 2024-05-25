@@ -6,7 +6,7 @@ from pyPantry.DesignPatterns import PyDesignPatterns
 class PyChainOfResponsibilityPattern(PyDesignPatterns):
     # Handler Interface
     class Handler(ABC):
-        def __init__(self, successor: 'PyChainOfResponsibilityPattern.Handler' = None):
+        def __init__(self, successor: "PyChainOfResponsibilityPattern.Handler" = None):
             self._successor = successor
 
         @abstractmethod

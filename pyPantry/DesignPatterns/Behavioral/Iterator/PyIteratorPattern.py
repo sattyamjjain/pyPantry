@@ -37,7 +37,7 @@ class PyIteratorPattern(PyDesignPatterns):
         def add_book(self, book: str) -> None:
             self._books.append(book)
 
-        def get_iterator(self) -> 'PyIteratorPattern.BookIterator':
+        def get_iterator(self) -> "PyIteratorPattern.BookIterator":
             return PyIteratorPattern.BookIterator(self._books)
 
     def example(self):

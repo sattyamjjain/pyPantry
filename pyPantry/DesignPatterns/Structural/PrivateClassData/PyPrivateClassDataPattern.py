@@ -22,7 +22,9 @@ class PyPrivateClassDataPattern(PyDesignPatterns):
                 return False
 
         def __init__(self, initial_balance: float):
-            self._data = PyPrivateClassDataPattern.BankAccount._PrivateData(initial_balance)
+            self._data = PyPrivateClassDataPattern.BankAccount._PrivateData(
+                initial_balance
+            )
 
         def get_balance(self) -> float:
             return self._data.balance

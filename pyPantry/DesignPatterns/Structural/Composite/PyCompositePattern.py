@@ -23,12 +23,12 @@ class PyCompositePattern(PyDesignPatterns):
     # Composite
     class CompositeGraphic(Graphic):
         def __init__(self):
-            self.children: List['PyCompositePattern.Graphic'] = []
+            self.children: List["PyCompositePattern.Graphic"] = []
 
-        def add(self, graphic: 'PyCompositePattern.Graphic') -> None:
+        def add(self, graphic: "PyCompositePattern.Graphic") -> None:
             self.children.append(graphic)
 
-        def remove(self, graphic: 'PyCompositePattern.Graphic') -> None:
+        def remove(self, graphic: "PyCompositePattern.Graphic") -> None:
             self.children.remove(graphic)
 
         def draw(self) -> str:

@@ -1,8 +1,10 @@
 import unittest
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import patch
 
-from pyPantry.DesignPatterns.Behavioral.Specification.PySpecificationPattern import PySpecificationPattern
+from pyPantry.DesignPatterns.Behavioral.Specification.PySpecificationPattern import (
+    PySpecificationPattern,
+)
 
 
 class PySpecificationPatternTestCase(unittest.TestCase):
@@ -31,14 +33,16 @@ class PySpecificationPatternTestCase(unittest.TestCase):
         self.assertEqual(len(filtered), 2)
 
     def test_and_specification(self):
-        spec = PySpecificationPattern.CategorySpecification("Electronics") & PySpecificationPattern.PriceSpecification(
-            1000)
+        spec = PySpecificationPattern.CategorySpecification(
+            "Electronics"
+        ) & PySpecificationPattern.PriceSpecification(1000)
         filtered = PySpecificationPattern.ProductFilter.filter(self.products, spec)
         self.assertEqual(len(filtered), 1)
 
     def test_or_specification(self):
-        spec = PySpecificationPattern.CategorySpecification("Electronics") | PySpecificationPattern.BrandSpecification(
-            "BrandC")
+        spec = PySpecificationPattern.CategorySpecification(
+            "Electronics"
+        ) | PySpecificationPattern.BrandSpecification("BrandC")
         filtered = PySpecificationPattern.ProductFilter.filter(self.products, spec)
         self.assertEqual(len(filtered), 3)
 
@@ -48,13 +52,21 @@ class PySpecificationPatternTestCase(unittest.TestCase):
         self.assertEqual(len(filtered), 2)
 
     def test_example(self):
-        with patch('sys.stdout', new=StringIO()) as fake_out:
+        with patch("sys.stdout", new=StringIO()) as fake_out:
             pattern = PySpecificationPattern()
             pattern.example()
-            output = fake_out.getvalue().strip().split('\n')
-            self.assertIn("Product: Smartphone, Category: Electronics, Price: 800, Brand: BrandB", output)
-            self.assertIn("Product: T-shirt, Category: Clothing, Price: 30, Brand: BrandA", output)
-            self.assertIn("Product: Laptop, Category: Electronics, Price: 1500, Brand: BrandA", output)
+            output = fake_out.getvalue().strip().split("\n")
+            self.assertIn(
+                "Product: Smartphone, Category: Electronics, Price: 800, Brand: BrandB",
+                output,
+            )
+            self.assertIn(
+                "Product: T-shirt, Category: Clothing, Price: 30, Brand: BrandA", output
+            )
+            self.assertIn(
+                "Product: Laptop, Category: Electronics, Price: 1500, Brand: BrandA",
+                output,
+            )
 
 
 if __name__ == "__main__":

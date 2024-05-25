@@ -12,7 +12,9 @@ class PyLeaderOrFollowerPattern(PyDesignPatterns):
         self.selector = selectors.DefaultSelector()
 
     class Worker(threading.Thread):
-        def __init__(self, selector, lock, condition, leader_event, followers_queue, stop_event):
+        def __init__(
+            self, selector, lock, condition, leader_event, followers_queue, stop_event
+        ):
             super().__init__()
             self.selector = selector
             self.lock = lock
@@ -65,7 +67,7 @@ class PyLeaderOrFollowerPattern(PyDesignPatterns):
         self.selector.register(conn, selectors.EVENT_READ, self.handle_connection)
 
     def example(self):
-        host, port = 'localhost', 65432
+        host, port = "localhost", 65432
 
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.bind((host, port))
@@ -80,8 +82,17 @@ class PyLeaderOrFollowerPattern(PyDesignPatterns):
         followers_queue = queue.Queue()
         stop_event = threading.Event()
 
-        workers = [self.Worker(self.selector, lock, condition, leader_event, followers_queue, stop_event) for _ in
-                   range(3)]
+        workers = [
+            self.Worker(
+                self.selector,
+                lock,
+                condition,
+                leader_event,
+                followers_queue,
+                stop_event,
+            )
+            for _ in range(3)
+        ]
         for worker in workers:
             followers_queue.put(worker)
             worker.start()

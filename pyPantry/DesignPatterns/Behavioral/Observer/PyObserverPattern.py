@@ -8,11 +8,11 @@ class PyObserverPattern(PyDesignPatterns):
     # Subject Interface
     class NewsChannel(ABC):
         @abstractmethod
-        def register_observer(self, observer: 'PyObserverPattern.Observer') -> None:
+        def register_observer(self, observer: "PyObserverPattern.Observer") -> None:
             pass
 
         @abstractmethod
-        def remove_observer(self, observer: 'PyObserverPattern.Observer') -> None:
+        def remove_observer(self, observer: "PyObserverPattern.Observer") -> None:
             pass
 
         @abstractmethod
@@ -22,13 +22,13 @@ class PyObserverPattern(PyDesignPatterns):
     # Concrete Subject
     class ConcreteNewsChannel(NewsChannel):
         def __init__(self):
-            self._observers: List['PyObserverPattern.Observer'] = []
+            self._observers: List["PyObserverPattern.Observer"] = []
             self._latest_news: str = ""
 
-        def register_observer(self, observer: 'PyObserverPattern.Observer') -> None:
+        def register_observer(self, observer: "PyObserverPattern.Observer") -> None:
             self._observers.append(observer)
 
-        def remove_observer(self, observer: 'PyObserverPattern.Observer') -> None:
+        def remove_observer(self, observer: "PyObserverPattern.Observer") -> None:
             self._observers.remove(observer)
 
         def notify_observers(self) -> None:

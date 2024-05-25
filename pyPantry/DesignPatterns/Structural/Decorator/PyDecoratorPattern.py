@@ -20,7 +20,7 @@ class PyDecoratorPattern(PyDesignPatterns):
 
     # Decorator
     class TextDecorator(Text):
-        def __init__(self, decorated_text: 'PyDecoratorPattern.Text'):
+        def __init__(self, decorated_text: "PyDecoratorPattern.Text"):
             self.decorated_text = decorated_text
 
         @abstractmethod
@@ -44,7 +44,9 @@ class PyDecoratorPattern(PyDesignPatterns):
         simple_text = PyDecoratorPattern.PlainText("Hello, World!")
         bold_text = PyDecoratorPattern.BoldDecorator(simple_text)
         italic_bold_text = PyDecoratorPattern.ItalicDecorator(bold_text)
-        underlined_italic_bold_text = PyDecoratorPattern.UnderlineDecorator(italic_bold_text)
+        underlined_italic_bold_text = PyDecoratorPattern.UnderlineDecorator(
+            italic_bold_text
+        )
 
         print("Plain Text:", simple_text.render())
         print("Bold Text:", bold_text.render())

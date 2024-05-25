@@ -14,10 +14,10 @@ class PyFlyweightPattern(PyDesignPatterns):
 
     # Flyweight Factory
     class CharacterFactory:
-        _characters: Dict[str, 'PyFlyweightPattern.Character'] = {}
+        _characters: Dict[str, "PyFlyweightPattern.Character"] = {}
 
         @classmethod
-        def get_character(cls, char: str) -> 'PyFlyweightPattern.Character':
+        def get_character(cls, char: str) -> "PyFlyweightPattern.Character":
             if char not in cls._characters:
                 cls._characters[char] = PyFlyweightPattern.Character(char)
             return cls._characters[char]
@@ -26,9 +26,9 @@ class PyFlyweightPattern(PyDesignPatterns):
         factory = PyFlyweightPattern.CharacterFactory()
 
         # Create characters
-        char_a1 = factory.get_character('A')
-        char_a2 = factory.get_character('A')
-        char_b = factory.get_character('B')
+        char_a1 = factory.get_character("A")
+        char_a2 = factory.get_character("A")
+        char_b = factory.get_character("B")
 
         # Display characters
         print(char_a1.display("Arial", 12))

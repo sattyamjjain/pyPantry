@@ -1,7 +1,9 @@
-import unittest
 import threading
+import unittest
 
-from pyPantry.DesignPatterns.Creational.Singleton.PySingletonPattern import PySingletonPattern
+from pyPantry.DesignPatterns.Creational.Singleton.PySingletonPattern import (
+    PySingletonPattern,
+)
 
 
 class PySingletonPatternTestCase(unittest.TestCase):
@@ -40,7 +42,9 @@ class PySingletonPatternTestCase(unittest.TestCase):
         for thread in threads:
             thread.join()
 
-        self.assertTrue(all(logger is logger_instances[0] for logger in logger_instances))
+        self.assertTrue(
+            all(logger is logger_instances[0] for logger in logger_instances)
+        )
 
 
 if __name__ == "__main__":

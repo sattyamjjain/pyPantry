@@ -47,7 +47,7 @@ class PyBuilderPattern(PyDesignPatterns):
         def build_drink(self) -> None:
             self.meal.add_item("Lemonade")
 
-        def get_meal(self) -> 'PyBuilderPattern.Meal':
+        def get_meal(self) -> "PyBuilderPattern.Meal":
             return self.meal
 
     # Concrete Builder for Non-Vegetarian Meal
@@ -64,12 +64,12 @@ class PyBuilderPattern(PyDesignPatterns):
         def build_drink(self) -> None:
             self.meal.add_item("Coke")
 
-        def get_meal(self) -> 'PyBuilderPattern.Meal':
+        def get_meal(self) -> "PyBuilderPattern.Meal":
             return self.meal
 
     # Director
     class MealDirector:
-        def __init__(self, builder: 'PyBuilderPattern.MealBuilder'):
+        def __init__(self, builder: "PyBuilderPattern.MealBuilder"):
             self.builder = builder
 
         def construct_meal(self) -> None:

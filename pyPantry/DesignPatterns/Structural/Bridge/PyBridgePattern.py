@@ -41,7 +41,7 @@ class PyBridgePattern(PyDesignPatterns):
 
     # Abstraction
     class RemoteControl:
-        def __init__(self, device: 'PyBridgePattern.Device'):
+        def __init__(self, device: "PyBridgePattern.Device"):
             self.device = device
 
         def turn_on(self) -> str:

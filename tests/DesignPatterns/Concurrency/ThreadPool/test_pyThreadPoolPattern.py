@@ -1,9 +1,10 @@
-import unittest
-from unittest.mock import patch, MagicMock, call
-import queue
 import time
+import unittest
+from unittest.mock import patch, call
 
-from pyPantry.DesignPatterns.Concurrency.ThreadPool.PyThreadPoolPattern import PyThreadPoolPattern
+from pyPantry.DesignPatterns.Concurrency.ThreadPool.PyThreadPoolPattern import (
+    PyThreadPoolPattern,
+)
 
 
 class PyThreadPoolPatternTestCase(unittest.TestCase):
@@ -11,7 +12,9 @@ class PyThreadPoolPatternTestCase(unittest.TestCase):
     def test_thread_pool(self):
         pool = PyThreadPoolPattern.ThreadPool(2)
 
-        with patch('builtins.print') as mocked_print, patch('time.sleep', return_value=None):
+        with patch("builtins.print") as mocked_print, patch(
+            "time.sleep", return_value=None
+        ):
             pool.add_task(mocked_print, "Task 1 running")
             pool.add_task(mocked_print, "Task 2 running")
             pool.add_task(mocked_print, "Task 3 running")
@@ -25,7 +28,9 @@ class PyThreadPoolPatternTestCase(unittest.TestCase):
             self.assertIn(call("Task 3 running"), mocked_print.mock_calls)
 
     def test_example(self):
-        with patch('builtins.print') as mocked_print, patch('time.sleep', return_value=None):
+        with patch("builtins.print") as mocked_print, patch(
+            "time.sleep", return_value=None
+        ):
             pattern = PyThreadPoolPattern()
             pattern.example()
             output = mocked_print.mock_calls

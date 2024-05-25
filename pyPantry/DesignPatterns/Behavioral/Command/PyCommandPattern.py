@@ -13,28 +13,28 @@ class PyCommandPattern(PyDesignPatterns):
 
     # Concrete Commands
     class LightOnCommand(Command):
-        def __init__(self, light: 'PyCommandPattern.Light'):
+        def __init__(self, light: "PyCommandPattern.Light"):
             self.light = light
 
         def execute(self) -> None:
             self.light.on()
 
     class LightOffCommand(Command):
-        def __init__(self, light: 'PyCommandPattern.Light'):
+        def __init__(self, light: "PyCommandPattern.Light"):
             self.light = light
 
         def execute(self) -> None:
             self.light.off()
 
     class FanOnCommand(Command):
-        def __init__(self, fan: 'PyCommandPattern.Fan'):
+        def __init__(self, fan: "PyCommandPattern.Fan"):
             self.fan = fan
 
         def execute(self) -> None:
             self.fan.on()
 
     class FanOffCommand(Command):
-        def __init__(self, fan: 'PyCommandPattern.Fan'):
+        def __init__(self, fan: "PyCommandPattern.Fan"):
             self.fan = fan
 
         def execute(self) -> None:
@@ -62,9 +62,9 @@ class PyCommandPattern(PyDesignPatterns):
     # Invoker
     class RemoteControl:
         def __init__(self):
-            self.commands: List['PyCommandPattern.Command'] = []
+            self.commands: List["PyCommandPattern.Command"] = []
 
-        def set_command(self, command: 'PyCommandPattern.Command') -> None:
+        def set_command(self, command: "PyCommandPattern.Command") -> None:
             self.commands.append(command)
 
         def execute_commands(self) -> None:

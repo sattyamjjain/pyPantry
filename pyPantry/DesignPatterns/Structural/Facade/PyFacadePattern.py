@@ -40,8 +40,12 @@ class PyFacadePattern(PyDesignPatterns):
 
     # Facade
     class HomeTheaterFacade:
-        def __init__(self, dvd: 'PyFacadePattern.DVDPlayer', projector: 'PyFacadePattern.Projector',
-                     sound: 'PyFacadePattern.SoundSystem'):
+        def __init__(
+            self,
+            dvd: "PyFacadePattern.DVDPlayer",
+            projector: "PyFacadePattern.Projector",
+            sound: "PyFacadePattern.SoundSystem",
+        ):
             self.dvd = dvd
             self.projector = projector
             self.sound = sound

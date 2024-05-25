@@ -1,8 +1,10 @@
 import unittest
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import patch
 
-from pyPantry.DesignPatterns.Structural.Decorator.PyDecoratorPattern import PyDecoratorPattern
+from pyPantry.DesignPatterns.Structural.Decorator.PyDecoratorPattern import (
+    PyDecoratorPattern,
+)
 
 
 class PyDecoratorPatternTestCase(unittest.TestCase):
@@ -29,21 +31,22 @@ class PyDecoratorPatternTestCase(unittest.TestCase):
     def test_combined_decorators(self):
         text = PyDecoratorPattern.PlainText("Hello, World!")
         decorated_text = PyDecoratorPattern.UnderlineDecorator(
-            PyDecoratorPattern.ItalicDecorator(
-                PyDecoratorPattern.BoldDecorator(text)
-            )
+            PyDecoratorPattern.ItalicDecorator(PyDecoratorPattern.BoldDecorator(text))
         )
         self.assertEqual(decorated_text.render(), "<u><i><b>Hello, World!</b></i></u>")
 
     def test_example(self):
-        with patch('sys.stdout', new=StringIO()) as fake_out:
+        with patch("sys.stdout", new=StringIO()) as fake_out:
             pattern = PyDecoratorPattern()
             pattern.example()
-            output = fake_out.getvalue().strip().split('\n')
+            output = fake_out.getvalue().strip().split("\n")
             self.assertIn("Plain Text: Hello, World!", output)
             self.assertIn("Bold Text: <b>Hello, World!</b>", output)
             self.assertIn("Italic Bold Text: <i><b>Hello, World!</b></i>", output)
-            self.assertIn("Underlined Italic Bold Text: <u><i><b>Hello, World!</b></i></u>", output)
+            self.assertIn(
+                "Underlined Italic Bold Text: <u><i><b>Hello, World!</b></i></u>",
+                output,
+            )
 
 
 if __name__ == "__main__":

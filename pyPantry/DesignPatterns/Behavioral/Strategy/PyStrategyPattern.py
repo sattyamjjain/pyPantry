@@ -46,7 +46,9 @@ class PyStrategyPattern(PyDesignPatterns):
             self.items.append(item)
             self.total_amount += price
 
-        def set_payment_strategy(self, strategy: 'PyStrategyPattern.PaymentStrategy') -> None:
+        def set_payment_strategy(
+            self, strategy: "PyStrategyPattern.PaymentStrategy"
+        ) -> None:
             self.payment_strategy = strategy
 
         def checkout(self) -> None:
@@ -60,13 +62,20 @@ class PyStrategyPattern(PyDesignPatterns):
         cart.add_item("Pen", 1.49)
 
         cart.set_payment_strategy(
-            PyStrategyPattern.CreditCardPayment("John Doe", "1234-5678-9876-5432", "123", "12/23"))
+            PyStrategyPattern.CreditCardPayment(
+                "John Doe", "1234-5678-9876-5432", "123", "12/23"
+            )
+        )
         cart.checkout()
 
         # Pay using PayPal
-        cart.set_payment_strategy(PyStrategyPattern.PayPalPayment("john.doe@example.com"))
+        cart.set_payment_strategy(
+            PyStrategyPattern.PayPalPayment("john.doe@example.com")
+        )
         cart.checkout()
 
         # Pay using Bitcoin
-        cart.set_payment_strategy(PyStrategyPattern.BitcoinPayment("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa"))
+        cart.set_payment_strategy(
+            PyStrategyPattern.BitcoinPayment("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
+        )
         cart.checkout()

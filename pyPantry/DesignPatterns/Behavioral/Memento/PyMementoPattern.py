@@ -18,10 +18,10 @@ class PyMementoPattern(PyDesignPatterns):
         def type(self, text: str) -> None:
             self._state += text
 
-        def save(self) -> 'PyMementoPattern.Memento':
+        def save(self) -> "PyMementoPattern.Memento":
             return PyMementoPattern.Memento(self._state)
 
-        def restore(self, memento: 'PyMementoPattern.Memento') -> None:
+        def restore(self, memento: "PyMementoPattern.Memento") -> None:
             self._state = memento.get_state()
 
         def get_text(self) -> str:
@@ -32,10 +32,10 @@ class PyMementoPattern(PyDesignPatterns):
         def __init__(self):
             self._mementos = []
 
-        def save(self, memento: 'PyMementoPattern.Memento') -> None:
+        def save(self, memento: "PyMementoPattern.Memento") -> None:
             self._mementos.append(memento)
 
-        def restore(self) -> 'PyMementoPattern.Memento':
+        def restore(self) -> "PyMementoPattern.Memento":
             return self._mementos.pop() if self._mementos else None
 
     def example(self):

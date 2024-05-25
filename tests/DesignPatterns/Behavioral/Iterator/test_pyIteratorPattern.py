@@ -1,8 +1,10 @@
 import unittest
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import patch
 
-from pyPantry.DesignPatterns.Behavioral.Iterator.PyIteratorPattern import PyIteratorPattern
+from pyPantry.DesignPatterns.Behavioral.Iterator.PyIteratorPattern import (
+    PyIteratorPattern,
+)
 
 
 class PyIteratorPatternTestCase(unittest.TestCase):
@@ -21,10 +23,10 @@ class PyIteratorPatternTestCase(unittest.TestCase):
         self.assertEqual(books, ["Book 1", "Book 2", "Book 3"])
 
     def test_example(self):
-        with patch('sys.stdout', new=StringIO()) as fake_out:
+        with patch("sys.stdout", new=StringIO()) as fake_out:
             pattern = PyIteratorPattern()
             pattern.example()
-            output = fake_out.getvalue().strip().split('\n')
+            output = fake_out.getvalue().strip().split("\n")
             self.assertIn("Book 1", output)
             self.assertIn("Book 2", output)
             self.assertIn("Book 3", output)

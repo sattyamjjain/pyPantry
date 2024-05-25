@@ -1,9 +1,12 @@
 import unittest
-import requests
 from multiprocessing import Process
 from time import sleep
 
-from pyPantry.DesignPatterns.Architectural.Microservices.PyMicroservicesPattern import PyMicroservicesPattern
+import requests
+
+from pyPantry.DesignPatterns.Architectural.Microservices.PyMicroservicesPattern import (
+    PyMicroservicesPattern,
+)
 
 
 class PyMicroservicesPatternTestCase(unittest.TestCase):
@@ -18,7 +21,7 @@ class PyMicroservicesPatternTestCase(unittest.TestCase):
         self.processes = [
             Process(target=self.user_service.run),
             Process(target=self.product_service.run),
-            Process(target=self.order_service.run)
+            Process(target=self.order_service.run),
         ]
 
         for process in self.processes:
@@ -34,7 +37,9 @@ class PyMicroservicesPatternTestCase(unittest.TestCase):
     def test_user_service(self):
         response = requests.get("http://localhost:5000/users")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json(), [{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}])
+        self.assertEqual(
+            response.json(), [{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}]
+        )
 
         new_user = {"id": 3, "name": "Charlie"}
         response = requests.post("http://localhost:5000/users", json=new_user)
@@ -44,7 +49,10 @@ class PyMicroservicesPatternTestCase(unittest.TestCase):
     def test_product_service(self):
         response = requests.get("http://localhost:5001/products")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json(), [{"id": 1, "name": "Laptop"}, {"id": 2, "name": "Smartphone"}])
+        self.assertEqual(
+            response.json(),
+            [{"id": 1, "name": "Laptop"}, {"id": 2, "name": "Smartphone"}],
+        )
 
         new_product = {"id": 3, "name": "Tablet"}
         response = requests.post("http://localhost:5001/products", json=new_product)
