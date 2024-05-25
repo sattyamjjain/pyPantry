@@ -8,6 +8,9 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Data Structures](#data-structures)
+  - [Algorithms](#algorithms)
+  - [Design Patterns](#design-patterns)
 - [Testing](#testing)
 - [Contributing](#contributing)
 - [Credits](#credits)
@@ -16,7 +19,7 @@
 
 ## 🌟 Features
 
-### Data Structures:
+### Data Structures
 
 - **Graph**: Traverse complex networks. 
   - `PyGraph.py`
@@ -54,9 +57,9 @@
 - **Trie**: Rapid text retrieval.
   - `PyTrie.py`
 
-### Algorithms:
+### Algorithms
 
-#### Searching:
+#### Searching
 
 - **Binary Search**: `PyBinarySearch.py`
 - **Jump Search**: `PyJumpSearch.py`
@@ -68,20 +71,11 @@
 - **Sentinel Linear Search**: `PySentinelLinearSearch.py`
 - **Interpolation Search**: `PyInterpolationSearch.py`
 
-#### Sorting:
+#### Sorting
 
 - **BogoSort**: `PyBogoSort.py`
 - **Odd-Even Sort**: `PyOddEvenSort.py`
 - **Sleep Sort**: `PySleepSort.py`
-- **Insertion Sort**: `PyInsertionSort.py`
-- **Tree Sort**: `PyTreeSort.py`
-- **Pigeonhole Sort**: `PyPigeonholeSort.py`
-- **3-Way Merge Sort**: `Py3WayMergeSort.py`
-- **Cycle Sort**: `PyCycleSort.py`
-- **Stooge Sort**: `PyStoogeSort.py`
-- **Merge Sort**: `PyMergeSort.py`
-- **Comb Sort**: `PyCombSort.py`
-- **Tag Sort**: `PyTagSort.py`
 - **Cocktail Sort**: `PyCocktailSort.py`
 - **Radix Sort**: `PyRadixSort.py`
 - **Bubble Sort**: `PyBubbleSort.py`
@@ -98,6 +92,60 @@
 - **TimSort**: `PyTimSort.py`
 - **Pancake Sort**: `PyPancakeSort.py`
 
+### Design Patterns
+
+#### Architectural Patterns
+
+- **Event-Driven Architecture**: `PyEventDrivenArchitecturePattern.py`
+- **Microservices**: `PyMicroservicesPattern.py`
+- **Model-View-Controller (MVC)**: `PyModelViewControllerPattern.py`
+- **Model-View-ViewModel (MVVM)**: `PyModelViewViewModelPattern.py`
+- **Service-Oriented Architecture (SOA)**: `PyServiceOrientedArchitecturePattern.py`
+
+#### Behavioral Patterns
+
+- **Chain of Responsibility**: `PyChainOfResponsibilityPattern.py`
+- **Command**: `PyCommandPattern.py`
+- **Interpreter**: `PyInterpreterPattern.py`
+- **Iterator**: `PyIteratorPattern.py`
+- **Mediator**: `PyMediatorPattern.py`
+- **Memento**: `PyMementoPattern.py`
+- **Null Object**: `PyNullObjectPattern.py`
+- **Observer**: `PyObserverPattern.py`
+- **Specification**: `PySpecificationPattern.py`
+- **State**: `PyStatePattern.py`
+- **Strategy**: `PyStrategyPattern.py`
+- **Template**: `PyTemplatePattern.py`
+- **Visitor**: `PyVisitorPattern.py`
+
+#### Concurrency Patterns
+
+- **Active Object**: `PyActiveObjectPattern.py`
+- **Half-Sync/Half-Async**: `PyHalfSyncOrHalfAsyncPattern.py`
+- **Leader-Follower**: `PyLeaderOrFollowerPattern.py`
+- **Reactor**: `PyReactorPattern.py`
+- **Thread Pool**: `PyThreadPoolPattern.py`
+
+#### Creational Patterns
+
+- **Abstract Factory**: `PyAbstractFactoryPattern.py`
+- **Builder**: `PyBuilderPattern.py`
+- **Factory Method**: `PyFactoryPattern.py`
+- **Object Pool**: `PyObjectPoolPattern.py`
+- **Prototype**: `PyPrototypePattern.py`
+- **Singleton**: `PySingletonPattern.py`
+
+#### Structural Patterns
+
+- **Adapter**: `PyAdapterPattern.py`
+- **Bridge**: `PyBridgePattern.py`
+- **Composite**: `PyCompositePattern.py`
+- **Decorator**: `PyDecoratorPattern.py`
+- **Facade**: `PyFacadePattern.py`
+- **Flyweight**: `PyFlyweightPattern.py`
+- **Private Class Data**: `PyPrivateClassDataPattern.py`
+- **Proxy**: `PyProxyPattern.py`
+
 ## 🔧 Installation
 
 ```bash
@@ -106,7 +154,7 @@ pip install pyPantry
 
 ## 🚀 Usage
 
-### Data Structures:
+### Data Structures
 
 ```python
 from pyPantry.DS.Stack.PyStack import PyStack
@@ -123,7 +171,7 @@ stack.push(3)
 print(stack.pop())  # Output: 3
 ```
 
-### Algorithms:
+### Algorithms
 
 ```python
 from pyPantry.Algo.Sorting.PyBubbleSort import PyBubbleSort
@@ -136,17 +184,38 @@ sorted_list = PyBubbleSort(arr=sample_list).sort()
 print(sorted_list)  # Output: [11, 12, 22, 25, 34, 64, 90]
 ```
 
+### Design Patterns
+
+#### Strategy Pattern
+
+```python
+from pyPantry.DesignPatterns.Behavioral.Strategy.PyStrategyPattern import PyStrategyPattern
+
+class CreditCardPayment(PyStrategyPattern.PaymentStrategy):
+    def pay(self, amount):
+        return f"Paid {amount} using Credit Card"
+
+payment_method = CreditCardPayment()
+print(payment_method.pay(100))  # Output: Paid 100 using Credit Card
+```
+
 ## 🧪 Testing
 
 All implementations come with corresponding test files located in the `tests` directory, ensuring reliability and correctness.
 
-## 🧪 Repo Activity
-
-![Alt](https://repobeats.axiom.co/api/embed/3ee7297c5f6d0e8b7211826e60240d216aa92b46.svg "Repobeats analytics image")
+To run tests, use:
+```bash
+python -m unittest discover tests
+```
 
 ## 🤝 Contributing
 
 We welcome and value contributions from the open-source community. Your input, whether it's a bug fix, feature addition, or documentation improvement, helps enhance `pyPantry`.
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request.
 
 ## 👏 Credits
 
@@ -154,7 +223,7 @@ Crafted with ❤️ by [Sattyam Jain](https://www.linkedin.com/in/sattyamjain/).
 
 ## 📜 License
 
-Licensed under the [MIT License](https://github.com/sattyamjjain/pyPantry/blob/main/LICENSE).
+Licensed under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
