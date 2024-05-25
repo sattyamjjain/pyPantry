@@ -12,7 +12,6 @@ This section of the `pyPantry` library provides robust implementations of variou
   - [Behavioral Patterns](#behavioral-patterns)
   - [Concurrency Patterns](#concurrency-patterns)
   - [Architectural Patterns](#architectural-patterns)
-- [Usage](#usage)
 - [Testing](#testing)
 
 ## 🌟 Features
@@ -80,31 +79,6 @@ Architectural patterns are design patterns that help to define the overall struc
 - **Microservices**: Structures an application as a collection of loosely coupled, independently deployable services. (`PyMicroservicesPattern.py`)
 - **Service-Oriented Architecture (SOA)**: Design principles used to define the integration of services across different systems. (`PyServiceOrientedArchitecturePattern.py`)
 
-## 🚀 Usage
-
-### Singleton Pattern Example
-
-```python
-from pyPantry.DesignPatterns.Creational.Singleton.PySingletonPattern import Singleton
-
-# Access the singleton instance
-singleton = Singleton.instance()
-singleton.some_business_logic()
-```
-
-### Strategy Pattern Example
-
-```python
-from pyPantry.DesignPatterns.Behavioral.Strategy.PyStrategyPattern import StrategyContext, ConcreteStrategyA, ConcreteStrategyB
-
-# Use Strategy A
-context = StrategyContext(ConcreteStrategyA())
-context.execute_strategy()  # Output: "Strategy A"
-
-# Use Strategy B
-context = StrategyContext(ConcreteStrategyB())
-context.execute_strategy()  # Output: "Strategy B"
-```
 
 ## 🧪 Testing
 

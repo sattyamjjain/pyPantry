@@ -149,7 +149,7 @@
 ## 🔧 Installation
 
 ```bash
-pip install pyPantry
+pip install python-Pantry 
 ```
 
 ## 🚀 Usage
