@@ -1,5 +1,5 @@
 
-# pyPantry: Your One-Stop Solution for Data Structures and Algorithms in Python
+# pyPantry: Your One-Stop Solution for  DSA, Design Patterns and etc. in Python
 
 `pyPantry` is a comprehensive Python library offering robust implementations of numerous data structures and algorithms. It serves as a reliable tool for educators, students, developers, and anyone keen on mastering or utilizing these foundational computer science concepts.
 
